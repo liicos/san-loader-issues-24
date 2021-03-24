@@ -1,0 +1,32 @@
+<template>
+  <div class="container">
+    <div class="box" style="height:{{height}}"></div>
+    <button on-click="setHeight">改变高度</button>
+    <span>当前高度：{{height}}</span>
+  </div>
+</template>
+
+<script>
+
+export default {
+  initData(){
+    return {
+      height: '100px'
+    }
+  },
+  attached(){
+    console.log(123);
+  },
+  setHeight(){
+    this.data.set('height','200px');
+  }
+}
+</script>
+
+<style>
+.box{
+  background:red;
+  width:100px;
+  transition:height .3s;
+}
+</style>

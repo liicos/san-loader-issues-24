@@ -1,0 +1,8 @@
+node_modules/
+dist/
+zip/
+.idea/
+/.idea/workspace.xml
+
+doc.md
+测试.md
