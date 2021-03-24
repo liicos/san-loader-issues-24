@@ -61,6 +61,9 @@ module.exports = (env, c) => {
         {
           test: /\.html$/,
           loader: 'html-loader',
+          options: {
+            minimize: false,
+          }  
         },
       ],
     },
